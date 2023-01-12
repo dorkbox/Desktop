@@ -88,7 +88,6 @@ dependencies {
     api("com.dorkbox:OS:1.6")
     api("com.dorkbox:Updates:1.1")
 
-
     val jnaVersion = "5.12.1"
     compileOnly("net.java.dev.jna:jna-jpms:$jnaVersion")
     compileOnly("net.java.dev.jna:jna-platform-jpms:$jnaVersion")
