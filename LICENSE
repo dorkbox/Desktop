@@ -1,4 +1,4 @@
- - Desktop - Native Desktop utility methods that enhance what is available in the java.Desktop standard class
+ - Desktop - Native Desktop enhancements beyond the java.Desktop standard class, Java 1.8+
    [The Apache Software License, Version 2.0]
    https://git.dorkbox.com/dorkbox/Desktop
    Copyright 2023
@@ -111,7 +111,7 @@
                Kotlin Compiler, Test Data+Libraries, and Tools repository contain third-party code, to which different licenses may apply
                See: https://github.com/JetBrains/kotlin/blob/master/license/README.md
 
-     - JNA - JNA implementations for Linux, MacOS, and Windows
+     - JNA - Native JNA extensions for Linux, MacOS, and Windows, Java 1.8+
        [The Apache Software License, Version 2.0]
        https://git.dorkbox.com/dorkbox/JNA
        Copyright 2023
