@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 dorkbox, llc
+ * Copyright 2023 dorkbox, llc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,12 +25,12 @@ import java.time.Instant
 gradle.startParameter.showStacktrace = ShowStacktrace.ALWAYS   // always show the stacktrace!
 
 plugins {
-    id("com.dorkbox.GradleUtils") version "3.6"
-    id("com.dorkbox.Licensing") version "2.17"
+    id("com.dorkbox.GradleUtils") version "3.8"
+    id("com.dorkbox.Licensing") version "2.19.1"
     id("com.dorkbox.VersionUpdate") version "2.5"
-    id("com.dorkbox.GradlePublish") version "1.15"
+    id("com.dorkbox.GradlePublish") version "1.17"
 
-    kotlin("jvm") version "1.7.20"
+    kotlin("jvm") version "1.8.0"
 }
 
 object Extras {
@@ -88,7 +88,7 @@ dependencies {
     api("com.dorkbox:OS:1.6")
     api("com.dorkbox:Updates:1.1")
 
-    val jnaVersion = "5.12.1"
+    val jnaVersion = "5.13.0"
     compileOnly("net.java.dev.jna:jna-jpms:$jnaVersion")
     compileOnly("net.java.dev.jna:jna-platform-jpms:$jnaVersion")
 
