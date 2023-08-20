@@ -82,8 +82,8 @@ tasks.jar.get().apply {
 //  is actually using that part of the library. If this happens, they will (or should) already be using the dependency)
 dependencies {
     api("com.dorkbox:Executor:3.11")
-    api("com.dorkbox:JNA:1.0")
-    api("com.dorkbox:OS:1.6")
+    api("com.dorkbox:JNA:1.4")
+    api("com.dorkbox:OS:1.8")
     api("com.dorkbox:Updates:1.1")
 
     val jnaVersion = "5.13.0"
