@@ -26,7 +26,7 @@ gradle.startParameter.showStacktrace = ShowStacktrace.ALWAYS   // always show th
 
 plugins {
     id("com.dorkbox.GradleUtils") version "3.17"
-    id("com.dorkbox.Licensing") version "2.25"
+    id("com.dorkbox.Licensing") version "2.26"
     id("com.dorkbox.VersionUpdate") version "2.8"
     id("com.dorkbox.GradlePublish") version "1.18"
 
@@ -37,7 +37,7 @@ object Extras {
     // set for the project
     const val description = "Native Desktop enhancements beyond the java.Desktop standard class, Java 1.8+"
     const val group = "com.dorkbox"
-    const val version = "1.0"
+    const val version = "1.1"
 
     // set as project.ext
     const val name = "Desktop"
@@ -81,8 +81,8 @@ tasks.jar.get().apply {
 // NOTE: compileOnly is used because there are some classes/dependencies that ARE NOT necessary to be included, UNLESS the user
 //  is actually using that part of the library. If this happens, they will (or should) already be using the dependency)
 dependencies {
-    api("com.dorkbox:Executor:3.11")
-    api("com.dorkbox:JNA:1.4")
+    api("com.dorkbox:Executor:3.13")
+    api("com.dorkbox:JNA:1.2")
     api("com.dorkbox:OS:1.8")
     api("com.dorkbox:Updates:1.1")
 
@@ -92,9 +92,7 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
 }
-repositories {
-    mavenCentral()
-}
+
 
 publishToSonatype {
     groupId = Extras.group
